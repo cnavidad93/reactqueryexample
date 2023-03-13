@@ -1,0 +1,18 @@
+#root {
+  max-width: 1280px;
+  padding: 2rem;
+}
+
+.home {
+  width: 80vw;
+}
+
+.home-sidebar {
+  .form-section {
+    margin-bottom: 16px;
+
+    input {
+      display: block;
+    }
+  }
+}
