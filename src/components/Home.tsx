@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Sidebar } from 'primereact/sidebar';
-import { DataTable } from 'primereact/dataTable';
+import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { useQuery, useQueryClient, useMutation } from 'react-query';
 import { fakeFetch, ListItem, MOCK_LIST } from '../helpers/utils';
@@ -17,7 +17,7 @@ function Home() {
   });
 
   const mutation = useMutation(
-    (newItem) => {
+    (newItem: ListItem) => {
       return fakeFetch(newItem);
     },
     {
