@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { QueryClientProvider, QueryClient } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
+import WebsocketView from './components/WebsocketView';
 import Home from './components/Home';
 
 import 'primereact/resources/themes/lara-light-indigo/theme.css'; // theme
@@ -15,7 +16,8 @@ const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <Home />
+        {/* <Home /> */}
+        <WebsocketView />
       <ReactQueryDevtools />
     </QueryClientProvider>
   </React.StrictMode>
