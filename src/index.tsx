@@ -10,15 +10,15 @@ import 'primereact/resources/primereact.css'; // core css
 import 'primeicons/primeicons.css'; // icons
 import 'primeflex/primeflex.css'; // css utility
 import './index.css';
+import Playground from './components/Playground';
 
 const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
     <QueryClientProvider client={queryClient}>
         {/* <Home /> */}
-        <WebsocketView />
+        <Playground />
+        {/* <WebsocketView /> */}
       <ReactQueryDevtools />
     </QueryClientProvider>
-  </React.StrictMode>
 );
