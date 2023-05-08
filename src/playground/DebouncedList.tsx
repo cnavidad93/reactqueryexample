@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useQuery } from 'react-query';
 import MyAutoComplete from './Autocomplete';
 
-import './styles.scss';
+// import './styles.scss';
 
 interface Suggestion {
   name: string;
